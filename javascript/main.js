@@ -12,8 +12,11 @@ var main = function () {
      //$(".content").append("<img src='"+tweet.profile_image_url+"' />" );
     }
     else {
-     $(".tweet:first").remove();
-     $(".content").append("<p class='tweet'>"+tweet.text+"</p>");;
+      $(".tweet:first").slideUp(500, function() {
+        $(".tweet:first").remove();
+  });
+      $(".content").append("<p class='tweet' style='display:none'>"+tweet.text+"</p>");
+      $(".tweet:last").slideDown(500);
     }
   });
  });
