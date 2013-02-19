@@ -6,14 +6,14 @@ var main = function () {
   stream.on("data", function(tweet) {
    console.log(tweet.text);
     if (count < 10){
-     $(".content").append("<p class 'tweet'>"+tweet.text+"</p>");
+     $(".content").append("<p class='tweet'>"+tweet.text+"</p>");
      count = count + 1;
      //$(".content").remove("<p class 'tweet'>"+tweet.text+"</p>");
      //$(".content").append("<img src='"+tweet.profile_image_url+"' />" );
     }
     else {
-     $("p:first").remove();
-     $(".content").append("<p class 'tweet'>"+tweet.text+"</p>");;
+     $(".tweet:first").remove();
+     $(".content").append("<p class='tweet'>"+tweet.text+"</p>");;
     }
   });
  });
