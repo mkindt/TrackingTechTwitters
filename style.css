@@ -1,7 +1,21 @@
 body {
-  background: cyan;
+  font-family: 'Ubuntu', sans-serif;
+  color: #ff99ff;
+  background: #0d0b1a;
 }
 
-.tweet {
-  color: purple;
+.content {
+  text-align: center;
 }
+
+a {
+  padding: 50px 25px 0 25px; 
+}
+
+.header {
+  padding: 50px 0 0 0;
+  font-family: 'Cardo', sans-serif;
+  font-size: 20pt;
+  text-align: center;
+}
+
